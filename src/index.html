@@ -1,13 +1,172 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Mathway</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Mathway</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="header">
+        <div id="mobile-notify">
+          <div class="cell">
+            <div class="mobile-dismiss"><i class="mw mw-close"></i></div>
+            <div id="culture-hint">Looking for the English version of Mathway?</div>
+            <div class="mobile-messages">
+              <div class="icon sprite icon-30"></div>
+              <div class="mathway">Mathway</div>
+              <div id="mobile-web">Visit Mathway on the web</div>
+              <div id="mobile-android">Start 7-day free trial on the app</div>
+              <div id="mobile-ios">Start 7-day free trial on the app</div>
+              <div id="mobile-amazon">Download free on Amazon</div>
+              <div id="mobile-windows">Download free in Windows Store</div>
+            </div><button class="mobile-browse">get</button><button class="culture-go">Yes</button>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="top-menu">
+          <div class="cell">
+            <div class="left-side">
+              <div class="hamburger"><i class="mw mw-hamburger"></i></div>
+              <div class="subject"> Algebra</div>
+            </div><a href="https://www.mathway.com/Algebra" id="mathway-link" class="logo-mathway sprite logo-header" target="_top"></a>
+            <div class="right-side">
+              <div id="tutor-available" title="Tutor availability"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+              <div class="member-icon notLoggedIn">
+                <div class="subscribed-icon"><i class="mw mw-upgrade"></i></div><i class="mw mw-member"></i>
+              </div>
+              <div class="show-more"><i class="mw mw-show-more"></i></div>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="chat-area" class="main-window" style="bottom: 234px;">
+        <div id="chat-notifier">
+          <div class="cn-block cn-new">New Messages</div>
+          <div class="cn-block cn-typing">User is Typing</div><span class="mw mw-trash cn-dismiss"></span>
+        </div>
+        <div id="static-ad-left"></div>
+        <div id="braze-card-outer">
+          <div class="cell">
+            <div id="braze-card-inner"></div>
+          </div>
+        </div>
+        <div class="cell scrollable chat-scroll-component">
+          <div class="chat-loader" id="chat-loader-upper"></div>
+          <div id="chat-outer">
+            <div id="chat-shim"></div>
+            <div id="chat-inner" class="ltr">
+              <div class="ch-bubble rendered" data-sequence="1000" genre="greeting" method="StartTutorial" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+                <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border clickable">
+                    <div class="ch-bubble-content">How can I help you?</div>
+                    <div class="ch-bubble-action"><span class="mw  mw-callout-startutorial"></span>Tap to view tutorial...</div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+              <div class="ch-bubble ch-solution-top rendered" data-sequence="1001" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border clickable ch-problem">
+                    <div class="ch-bubble-content">
+                      <div class="editorLine"><span>cum</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+              <div class="ch-bubble rendered" data-sequence="1002" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+                <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border">
+                    <div class="ch-bubble-content">that's not very nice</div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+              <div class="ch-bubble ch-solution-top rendered" data-sequence="1003" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border clickable ch-problem">
+                    <div class="ch-bubble-content">
+                      <div class="editorLine"><span>1+1</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+              <div class="ch-bubble rendered" data-sequence="1004" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+                <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border">
+                    <div class="ch-bubble-content">Add 1 and 1</div>
+                    <div class="ch-bubble-content">2 </div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+             
+              <div class="ch-bubble rendered" data-sequence="1005" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+                <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+                <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
+                  <div class="ch-bubble-border clickable ch-problem">
+                    <div class="ch-bubble-content">Not the answer you were looking for?</div>
+                    <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>Tap for more options...</div>
+                  </div>
+                </div>
+                <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-loader" id="chat-loader-lower"></div>
+        </div>
+        <div id="static-ad-right"></div>
+      </div>
+      <div id="drawer" style="height: 234px; bottom: -1px; width: 100%; left: auto;" class="opened ltr">
+        <div id="editor">
+          <div class="cell" style="width: auto;">
+            <div id="editor-outer">
+              <div id="editor-container" style="width: calc(100% - 52px);">
+                <div id="editor-tester" tabindex="0"><span id="editor-tester_cursor" class="cursor off" style="left: 0px; height: 14.4px; top: 7.2px;"></span>
+                  <div id="editor-tester_frame" style="outline: none;">
+                    <input id="editor-tester0" class="emptyText editorLine" placeholder = "Enter a problem..." style = "border:0px; font-size:18px; font:normal 18px/27px 'Segoe UI', 'Lucida Grande', Tahoma, Arial; color:black"></input>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="editor-buttons" style="width: 32px;"><button aria-label="submit your problem" class="enabled" style="right: 0px;"><i class="mw mw-paper-airplane"></i></button><button aria-label="take a picture of your problem" class="hidden"><i class="mw mw-camera"></i></button><button aria-label="upload a photo of your problem" class="hidden" style="right: 0px;"><i class="mw mw-addimage"></i></button><button aria-label="edit your problem" class="hidden"><i class="mw mw-edit"></i></button><button aria-label="describe your problem" class="hidden"><i class="mw mw-voice"></i></button><button aria-label="toggle drop down" class="hidden"><i class="mw mw-step"></i></button><button aria-label="remove editor row" class="hidden"><i class="mw mw-editor-remove"></i></button><input class="editor-attach-file" type="file" accept="image/*" capture="capture"><input class="editor-focus-hole js-bound" type="text" style="display: none"></div>
+            </div>
+          </div>
+        </div>
+        <div id="did-you-mean" style="display: block;">
+          <div id="dym-container">
+            <div class="cell" style="width: auto;">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                  <tr id="dym-cellbody">
+                    <td class="dym-suggestion clickable" keystrokes="		x\|">
+                      <div class = "editorLine">f(x)</div>
+                    </td>
+                    <td class="dym-suggestion clickable" keystrokes="		x^2\>\|">
+                      <div class = "editorLine">x^2</div>
+                    <td class="dym-suggestion clickable" keystrokes="		x^3\>\|">
+                      <div class = "editorLine">x^3</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="keyboard">
+          <div class="cell" style="width: auto;"><div class="kbContainer"><div class="kbRow"><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default kbAltFirst" id="key-left_paren" style="display: none; opacity: 0;"><div class="kbAltKey kbAltSingle" data-id="left_paren" data-keycode="40" data-char="(">(</div></div><div class="kbKey default kbFirst" data-id="left_paren" data-keycode="40" data-char="(" data-popup="1">(</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-right_paren"><div class="kbAltKey kbAltSingle" data-id="right_paren" data-keycode="41" data-char=")">)</div></div><div class="kbKey default" data-id="right_paren" data-keycode="41" data-char=")" data-popup="1">)</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-bar"><div class="kbAltKey kbAltSingle" data-id="bar" data-keycode="124" data-char="|">|</div></div><div class="kbKey default" data-id="bar" data-keycode="124" data-char="|" data-popup="1">|</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-left_bracket"><div class="kbAltKey kbAltSingle" data-id="left_bracket" data-keycode="91" data-char="[">[</div></div><div class="kbKey default" data-id="left_bracket" data-keycode="91" data-char="[" data-popup="1">[</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-right_bracket"><div class="kbAltKey kbAltSingle" data-id="right_bracket" data-keycode="93" data-char="]">]</div></div><div class="kbKey default" data-id="right_bracket" data-keycode="93" data-char="]" data-popup="1">]</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-sqrt"><div class="kbAltKey kbAltSingle" data-id="sqrt" data-keycode="-1" data-char="√">√</div></div><div class="kbKey default" data-id="sqrt" data-keycode="-1" data-char="√" data-popup="1">√</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-nthrt"><div class="kbAltKey kbAltSingle" data-id="nthrt" data-keycode="-1" data-char=""></div></div><div class="kbKey default" data-id="nthrt" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-gte"><div class="kbAltKey kbAltSingle" data-id="gte" data-keycode="-1" data-char="≥">≥</div></div><div class="kbKey default" data-id="gte" data-keycode="-1" data-char="≥" data-popup="1">≥</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-matrix"><div class="kbAltKey kbAltSingle" data-id="matrix" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="matrix" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-table"><div class="kbAltKey kbAltSingle" data-id="table" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="table" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-function"><div class="kbAltKey kbAltSingle" data-id="function" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="function" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light kbAltLast" id="key-euler"><div class="kbAltKey kbAltSingle" data-id="euler" data-keycode="-1" data-char=""></div></div><div class="kbKey light kbLast" data-id="euler" data-keycode="-1" data-char="" data-popup="1"></div></div></div><div class="kbRow"><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default kbAltFirst" id="key-x"><div class="kbAltKey kbAltSingle" data-id="x" data-keycode="-1" data-char=""></div></div><div class="kbKey default kbFirst" data-id="x" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-seven"><div class="kbAltKey kbAltSingle" data-id="seven" data-keycode="55" data-char="7">7</div></div><div class="kbKey default" data-id="seven" data-keycode="55" data-char="7" data-popup="1">7</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-eight"><div class="kbAltKey kbAltSingle" data-id="eight" data-keycode="56" data-char="8">8</div></div><div class="kbKey default" data-id="eight" data-keycode="56" data-char="8" data-popup="1">8</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-nine"><div class="kbAltKey kbAltSingle" data-id="nine" data-keycode="57" data-char="9">9</div></div><div class="kbKey default" data-id="nine" data-keycode="57" data-char="9" data-popup="1">9</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-fraction"><div class="kbAltKey kbAltSingle" data-id="fraction" data-keycode="-1" data-char=""></div></div><div class="kbKey default" data-id="fraction" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-pow"><div class="kbAltKey kbAltSingle" data-id="pow" data-keycode="-1" data-char=""></div></div><div class="kbKey default" data-id="pow" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-sub"><div class="kbAltKey kbAltSingle" data-id="sub" data-keycode="-1" data-char=""></div></div><div class="kbKey default" data-id="sub" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-lte"><div class="kbAltKey kbAltSingle" data-id="lte" data-keycode="-1" data-char="≤">≤</div></div><div class="kbKey default" data-id="lte" data-keycode="-1" data-char="≤" data-popup="1">≤</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-ln"><div class="kbAltKey kbAltSingle" data-id="ln" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="ln" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-scientific"><div class="kbAltKey kbAltSingle" data-id="scientific" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="scientific" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-piecewise"><div class="kbAltKey kbAltSingle" data-id="piecewise" data-keycode="-1" data-char=""></div></div><div class="kbKey light large" data-id="piecewise" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light kbAltLast" id="key-imaginary"><div class="kbAltKey kbAltSingle" data-id="imaginary" data-keycode="-1" data-char=""></div></div><div class="kbKey light kbLast" data-id="imaginary" data-keycode="-1" data-char="" data-popup="1"></div></div></div><div class="kbRow"><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default kbAltFirst" id="key-y"><div class="kbAltKey kbAltSingle" data-id="y" data-keycode="-1" data-char=""></div></div><div class="kbKey default kbFirst" data-id="y" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-four"><div class="kbAltKey kbAltSingle" data-id="four" data-keycode="52" data-char="4">4</div></div><div class="kbKey default" data-id="four" data-keycode="52" data-char="4" data-popup="1">4</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-five"><div class="kbAltKey kbAltSingle" data-id="five" data-keycode="53" data-char="5">5</div></div><div class="kbKey default" data-id="five" data-keycode="53" data-char="5" data-popup="1">5</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-six"><div class="kbAltKey kbAltSingle" data-id="six" data-keycode="54" data-char="6">6</div></div><div class="kbKey default" data-id="six" data-keycode="54" data-char="6" data-popup="1">6</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-forward_slash"><div class="kbAltKey kbAltSingle" data-id="forward_slash" data-keycode="47" data-char="/">/</div></div><div class="kbKey default" data-id="forward_slash" data-keycode="47" data-char="/" data-popup="1">/</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-caret"><div class="kbAltKey kbAltSingle" data-id="caret" data-keycode="94" data-char="^">^</div></div><div class="kbKey default" data-id="caret" data-keycode="94" data-char="^" data-popup="1">^</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-asterisk"><div class="kbAltKey kbAltSingle" data-id="asterisk" data-keycode="42" data-char="×">×</div></div><div class="kbKey default" data-id="asterisk" data-keycode="42" data-char="×" data-popup="1">×</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-gt"><div class="kbAltKey kbAltSingle" data-id="gt" data-keycode="62" data-char=">">&gt;</div></div><div class="kbKey default" data-id="gt" data-keycode="62" data-char=">" data-popup="1">&gt;</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-log"><div class="kbAltKey kbAltSingle" data-id="log" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="log" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-nlog"><div class="kbAltKey kbAltSingle" data-id="nlog" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="nlog" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-intersect"><div class="kbAltKey kbAltSingle" data-id="intersect" data-keycode="-1" data-char="∩">∩</div></div><div class="kbKey light" data-id="intersect" data-keycode="-1" data-char="∩" data-popup="1">∩</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light kbAltLast" id="key-union"><div class="kbAltKey kbAltSingle" data-id="union" data-keycode="-1" data-char="∪">∪</div></div><div class="kbKey light kbLast" data-id="union" data-keycode="-1" data-char="∪" data-popup="1">∪</div></div></div><div class="kbRow"><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default kbAltFirst" id="key-z"><div class="kbAltKey kbAltSingle" data-id="z" data-keycode="-1" data-char=""></div></div><div class="kbKey default kbFirst" data-id="z" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-one"><div class="kbAltKey kbAltSingle" data-id="one" data-keycode="49" data-char="1">1</div></div><div class="kbKey default" data-id="one" data-keycode="49" data-char="1" data-popup="1">1</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-two"><div class="kbAltKey kbAltSingle" data-id="two" data-keycode="50" data-char="2">2</div></div><div class="kbKey default" data-id="two" data-keycode="50" data-char="2" data-popup="1">2</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-three"><div class="kbAltKey kbAltSingle" data-id="three" data-keycode="51" data-char="3">3</div></div><div class="kbKey default" data-id="three" data-keycode="51" data-char="3" data-popup="1">3</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-minus"><div class="kbAltKey kbAltSingle" data-id="minus" data-keycode="45" data-char="-">-</div></div><div class="kbKey default" data-id="minus" data-keycode="45" data-char="-" data-popup="1">-</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-plus"><div class="kbAltKey kbAltSingle" data-id="plus" data-keycode="43" data-char="+">+</div></div><div class="kbKey default" data-id="plus" data-keycode="43" data-char="+" data-popup="1">+</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-division"><div class="kbAltKey kbAltSingle" data-id="division" data-keycode="-1" data-char="÷">÷</div></div><div class="kbKey default" data-id="division" data-keycode="-1" data-char="÷" data-popup="1">÷</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-lt"><div class="kbAltKey kbAltSingle" data-id="lt" data-keycode="60" data-char="<">&lt;</div></div><div class="kbKey default" data-id="lt" data-keycode="60" data-char="<" data-popup="1">&lt;</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-mixed"><div class="kbAltKey kbAltSingle" data-id="mixed" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="mixed" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-point"><div class="kbAltKey kbAltSingle" data-id="point" data-keycode="-1" data-char=""></div></div><div class="kbKey light" data-id="point" data-keycode="-1" data-char="" data-popup="1"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light" id="key-pi"><div class="kbAltKey kbAltSingle" data-id="pi" data-keycode="-1" data-char="π">π</div></div><div class="kbKey light" data-id="pi" data-keycode="-1" data-char="π" data-popup="1">π</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle light kbAltLast" id="key-infinity"><div class="kbAltKey kbAltSingle" data-id="infinity" data-keycode="-1" data-char="∞">∞</div></div><div class="kbKey light kbLast" data-id="infinity" data-keycode="-1" data-char="∞" data-popup="1">∞</div></div></div><div class="kbRow"><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbKey dark kbFirst" data-id="abc" data-keycode="-1" data-char="" data-popup="0"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-comma"><div class="kbAltKey kbAltSingle" data-id="comma" data-keycode="44" data-char=",">,</div></div><div class="kbKey default" data-id="comma" data-keycode="44" data-char="," data-popup="1">,</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-zero"><div class="kbAltKey kbAltSingle" data-id="zero" data-keycode="48" data-char="0">0</div></div><div class="kbKey default" data-id="zero" data-keycode="48" data-char="0" data-popup="1">0</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-period"><div class="kbAltKey kbAltSingle" data-id="period" data-keycode="46" data-char=".">.</div></div><div class="kbKey default" data-id="period" data-keycode="46" data-char="." data-popup="1">.</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-percent"><div class="kbAltKey kbAltSingle" data-id="percent" data-keycode="37" data-char="%">%</div></div><div class="kbKey default" data-id="percent" data-keycode="37" data-char="%" data-popup="1">%</div></div><div class="kbKeyContainer kbSpan2" style="width: 164px;"><div class="kbKey default" data-id="space" data-keycode="-1" data-char="" data-popup="0"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbAlt kbSingle default" id="key-equals"><div class="kbAltKey kbAltSingle" data-id="equals" data-keycode="61" data-char="=">=</div></div><div class="kbKey default" data-id="equals" data-keycode="61" data-char="=" data-popup="1">=</div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbKey dark" data-id="left_arrow" data-keycode="-1" data-char="" data-popup="0"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbKey dark" data-id="right_arrow" data-keycode="-1" data-char="" data-popup="0"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbKey dark" data-id="backspace" data-keycode="8" data-char="" data-popup="0"></div></div><div class="kbKeyContainer kbSpan1" style="width: 80px;"><div class="kbKey dark kbLast" data-id="return" data-keycode="-1" data-char="" data-popup="0"></div></div></div></div></div>
+      </div>
+      </div>
+    </div>
+    <app-root></app-root>
+  </body>
 </html>
