@@ -1,6 +1,6 @@
-# Mathway
+# Math Apple
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+This project is a 4 fun experiment to replicate Mathway and play bad apple on it.
 
 ## Development server
 
