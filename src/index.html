@@ -55,7 +55,7 @@
             <div id="braze-card-inner"></div>
           </div>
         </div>
-        <div class="cell scrollable chat-scroll-component">
+        <div class="cell scrollable chat-scroll-component" id = "autscroll">
           <div class="chat-loader" id="chat-loader-upper"></div>
           <div id="chat-outer">
             <div id="chat-shim"></div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
               </div>
-              <div class="ch-bubble ch-solution-top rendered" data-sequence="1001" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+              <div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
                 <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
                   <div class="ch-bubble-border clickable ch-problem">
                     <div class="ch-bubble-content">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
               </div>
-              <div class="ch-bubble rendered" data-sequence="1002" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+              <div class="ch-bubble rendered" data-sequence="1000" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
                 <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
                 <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
                   <div class="ch-bubble-border">
@@ -89,7 +89,7 @@
                 </div>
                 <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
               </div>
-              <div class="ch-bubble ch-solution-top rendered" data-sequence="1003" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+              <div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
                 <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
                   <div class="ch-bubble-border clickable ch-problem">
                     <div class="ch-bubble-content">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
               </div>
-              <div class="ch-bubble rendered" data-sequence="1004" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+              <div class="ch-bubble rendered" data-sequence="1000" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
                 <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
                 <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
                   <div class="ch-bubble-border">
@@ -110,7 +110,7 @@
                 <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
               </div>
              
-              <div class="ch-bubble rendered" data-sequence="1005" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
+              <div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;">
                 <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div>
                 <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);">
                   <div class="ch-bubble-border clickable ch-problem">
@@ -133,7 +133,7 @@
               <div id="editor-container" style="width: calc(100% - 52px);">
                 <div id="editor-tester" tabindex="0"><span id="editor-tester_cursor" class="cursor off" style="left: 0px; height: 14.4px; top: 7.2px;"></span>
                   <div id="editor-tester_frame" style="outline: none;">
-                    <input id="editor-tester0" class="emptyText editorLine" placeholder = "Enter a problem..." style = "border:0px; font-size:18px; font:normal 18px/27px 'Segoe UI', 'Lucida Grande', Tahoma, Arial; color:black"></input>
+                    <input id="editor-tester0" class="emptyText editorLine userinputpy" placeholder = "Enter a problem..." style = "border:0px; font-size:18px; font:normal 18px/27px 'Segoe UI', 'Lucida Grande', Tahoma, Arial; color:black"></input>
                   </div>
                 </div>
                 <div class="clear"></div>
@@ -169,4 +169,82 @@
     </div>
     <app-root></app-root>
   </body>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    var theInput = document.getElementsByClassName("userinputpy");
+    var chat = document.getElementById("chat-inner");
+
+    function ChatBox(inputy) {
+      if (inputy == "apple") {
+        $("#chat-inner").append('<div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content"> <div class="editorLine"><span>' + inputy + '</span></div> </div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+        $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">Bad Apple time!</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>You are bad btw...</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+        activate();
+      }
+      else {
+        $("#chat-inner").append('<div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content"> <div class="editorLine"><span>' + inputy + '</span></div> </div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+        $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">Sorry I forgor how to do math. 💀</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>Type apple for a suprise...</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+      }
+      $("#autscroll").scrollTop($("#chat-inner").height());
+    }
+
+    function createBox(inpus) {
+      $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border"> <div class="ch-bubble-content" style = "font-size: 5px; text-align: center; white-space: pre; line-height: 4px; font-family: monospace;">' + inpus + '</div></div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+      $("#autscroll").scrollTop($("#chat-inner").height() - 300);
+    }
+
+    function renderFrame(frame) {
+      var top = 0;
+      var bottom = 0;
+
+      var latex;
+
+      const interv = setInterval(function() {
+        if (frame < top) {
+          createBox(latex.result[frame - bottom])
+          frame++;
+        } else {
+          xhr = new XMLHttpRequest();
+          xhr.open("GET", `http://127.0.0.1:5000/?frame=${frame}`);
+          xhr.send();
+          xhr.onload = function(e) {
+            latex = JSON.parse(xhr.response);
+            if (latex.result === null)
+              clearInterval(interv);
+            console.log(latex.result[0])
+            bottom = frame;
+            top += latex.number_of_frames;
+          }
+        }
+
+      }, 332);
+    }
+
+    var interval;
+    xhr = new XMLHttpRequest();
+    function activate() {
+      interval = setInterval(() => { // Backend Connection
+        xhr.open('GET', `http://127.0.0.1:5000/init`);
+        xhr.send();
+      }, 1000);
+
+      xhr.onload = () => { // Setup when connection is made
+      clearInterval(interval);
+      var latex = JSON.parse(xhr.response);
+      var total_frames = latex.total_frames;
+
+      renderFrame(1)
+
+    }
+    }
+
+    theInput[0].addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        ChatBox(theInput[0].value);
+        theInput[0].value = "";
+        
+  }
+});
+  
+  </script>
 </html>
