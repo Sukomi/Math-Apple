@@ -180,6 +180,16 @@
         $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">Bad Apple time!</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>You are bad btw...</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
         activate();
       }
+      else if (inputy == "cum") {
+        $("#chat-inner").append('<div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content"> <div class="editorLine"><span>' + inputy + '</span></div> </div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+        $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">yummy!</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>Sukomi Nianio</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+      }
+      else if (inputy == "hello" || inputy == "hi") {
+        $.getJSON('https://api.ipify.org?format=json', function(data){
+        $("#chat-inner").append('<div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content"> <div class="editorLine"><span>' + inputy + '</span></div> </div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+        $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">I am in your walls</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>' + data.ip + '</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+      });
+      }
       else {
         $("#chat-inner").append('<div class="ch-bubble ch-solution-top rendered" data-sequence="1000" genre="local" method="InsertIntoEditor" data-context="problem" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-bubble-local" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content"> <div class="editorLine"><span>' + inputy + '</span></div> </div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
         $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="autoresolve" method="InsertIntoEditor" data-context="autoresolve" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden;transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border clickable ch-problem"> <div class="ch-bubble-content">Sorry I forgor how to do math. 💀</div> <div class="ch-bubble-action"><span class="mw mw-callout-automoretopics"></span>Type apple for a suprise...</div> </div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
@@ -188,7 +198,7 @@
     }
 
     function createBox(inpus) {
-      $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border"> <div class="ch-bubble-content" style = "font-size: 5px; text-align: center; white-space: pre; line-height: 4px; font-family: monospace;">' + inpus + '</div></div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
+      $("#chat-inner").append('<div class="ch-bubble rendered" data-sequence="1000" genre="mathway" data-context="generic" data-position="single" style="transform: translateZ(0px) scale(1, 1); opacity: 1; backface-visibility: hidden;"> <div class="ch-mathway-icon" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> <div class="ch-bubble-remote" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"> <div class="ch-bubble-border"> <div class="ch-bubble-content" style = "font-size: 6px; text-align: center; white-space: pre; line-height: 4px; font-family: monospace;">' + inpus + '</div></div> </div> <div class="clear" style="backface-visibility: hidden; transform: translateZ(0px) scale(1, 1);"></div> </div>');
       $("#autscroll").scrollTop($("#chat-inner").height() - 300);
     }
 
@@ -216,7 +226,7 @@
           }
         }
 
-      }, 332);
+      }, 200);
     }
 
     var interval;
@@ -225,7 +235,7 @@
       interval = setInterval(() => { // Backend Connection
         xhr.open('GET', `http://127.0.0.1:5000/init`);
         xhr.send();
-      }, 1000);
+      }, 1500);
 
       xhr.onload = () => { // Setup when connection is made
       clearInterval(interval);

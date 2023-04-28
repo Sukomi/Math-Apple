@@ -20,7 +20,7 @@ CORS(app)
 FRAME_DIR = "frames"
 FILE_SUF = "png"
 BLOCK_SIZE = 25
-ASCII_CHARS = ["@","#","S","%","?","*","+",";",":",",","."]
+ASCII_CHARS = ["0","8","4","9","6","2","5","1","3","7","*"]
 NEW_WIDTH = 100
 
 frame = multiprocessing.Value('i',0)
